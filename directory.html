@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kallon Chamber of Commerce Directory</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Kallon Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-background.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/directory.html">
+    <meta property="og:description" content="Explore local businesses and connect with your community.">
+    <meta name="author" content="Your Full Name">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <h1>Kallon Chamber of Commerce Directory</h1>
+            </div>
+            <button class="burger-menu" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+
+<div class="hero-section">
+    <h2>
+        <span>Explore</span>
+        <span>Kallon</span>
+        <span>Chamber</span>
+        <span>of</span>
+        <span>Commerce</span>
+        <span>Directory</span>
+    </h2>
+    <p>Discover local businesses and connect with your community.</p>
+</div>
+
+    <main>
+        <section class="member-list">
+            <div class="view-toggle">
+                <button id="grid-view" aria-label="Switch to grid view">Grid View</button>
+                <button id="list-view" aria-label="Switch to list view">List View</button>
+            </div>
+            <article id="member-container" class="grid">
+                <!-- Member cards will be dynamically inserted here -->
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter-icon.png" alt="Twitter">
+                </a>
+            </div>
+            <p>Contact us: info@chamberofcommerce.com | Phone: (232) 88075111</p>
+            <p id="current-year">&copy; <span id="year"></span> Kallon Chamber of Commerce</p>
+            <p id="last-modified">Last Update: <span id="last-modified-date"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

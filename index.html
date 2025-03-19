@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kallon Chamber of Commerce - Home</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Welcome to the Kallon Chamber of Commerce. Discover local businesses, community events, and opportunities to grow your business.">
+    <meta property="og:title" content="Kallon Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-background.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/home.html">
+    <meta property="og:description" content="Welcome to the Kallon Chamber of Commerce. Discover local businesses and community events.">
+    <meta name="author" content="Your Full Name">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                <h1>Kallon Chamber of Commerce</h1>
+            </div>
+            <button class="burger-menu" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <div class="hero-section">
+        <h2>Welcome to the Kallon Chamber of Commerce</h2>
+        <p>Your gateway to local businesses and community events.</p>
+        <br>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+    </div>
+
+    <main>
+        <div class="events-weather-container">
+            <section class="current-events">
+                <img src="images/event-icon.png" alt="Event Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+                <h3>Current Events</h3>
+                <p>Stay tuned for upcoming events in our community!</p>
+                <!-- Event details will be dynamically inserted here -->
+            </section>
+
+            <section class="weather-section">
+                <img src="images/weather-icon.png" alt="Weather Icon" style="max-width: 100px; display: block; margin: 0 auto;">
+                <h3>Weather Update</h3>
+                <div id="weather-container">
+                    <p>Loading weather data...</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="company-spotlights">
+            <h3>Company Spotlights</h3>
+            <div id="spotlight-container">
+                <p>Loading spotlighted businesses...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+                    <img src="images/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                    <img src="images/twitter-icon.png" alt="Twitter">
+                </a>
+            </div>
+            <p>Contact us: info@chamberofcommerce.com | Phone: (232) 88075111</p>
+            <p id="current-year">&copy; <span id="year"></span> Kallon Chamber of Commerce</p>
+            <p id="last-modified">Last Update: <span id="last-modified-date"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

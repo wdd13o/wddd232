@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Sierra Leone Brewery Limited",
+        "address": "Wellington Industrial Estate, Freetown, Sierra Leone",
+        "phone": "+232 22 222222",
+        "website": "https://sierraleonebrewery.com",
+        "logo": "images/sierra-leone-brewery-limited.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Africell Sierra Leone",
+        "address": "Wilkinson Road, Freetown, Sierra Leone",
+        "phone": "+232 77 777777",
+        "website": "https://africell.sl",
+        "logo": "images/africell-sierra-leone.jpg",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Orange Sierra Leone",
+        "address": "Hill Station, Freetown, Sierra Leone",
+        "phone": "+232 88 888888",
+        "website": "https://www.orange.sl",
+        "logo": "images/orange-sierra-leone.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Rokel Commercial Bank",
+        "address": "25-27 Siaka Stevens Street, Freetown, Sierra Leone",
+        "phone": "+232 22 222333",
+        "website": "https://rokelbank.sl",
+        "logo": "images/rokel-commercial-bank.jpg",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Sierra Leone Commercial Bank",
+        "address": "30 Siaka Stevens Street, Freetown, Sierra Leone",
+        "phone": "+232 22 222444",
+        "website": "https://slcb.com",
+        "logo": "images/sierra-leone-commercial-bank.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "National Petroleum (NP) Sierra Leone",
+        "address": "Wilkinson Road, Freetown, Sierra Leone",
+        "phone": "+232 22 222555",
+        "website": "https://npsl.com",
+        "logo": "images/national-petroleum.jpg",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Radisson Blu Mammy Yoko Hotel",
+        "address": "Aberdeen, Freetown, Sierra Leone",
+        "phone": "+232 79 999999",
+        "website": "https://www.radissonhotels.com",
+        "logo": "images/radisson-blu-mammy-yoko-hotel.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Choithram Supermarket",
+        "address": "Hill Station, Freetown, Sierra Leone",
+        "phone": "+232 22 222666",
+        "website": "https://choithram.com",
+        "logo": "images/choithram-supermarket.jpg",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Mercury International",
+        "address": "Wilkinson Road, Freetown, Sierra Leone",
+        "phone": "+232 22 222777",
+        "website": "https://mercuryinternational.sl",
+        "logo": "images/mercury-international.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Leone Oil",
+        "address": "Cline Town, Freetown, Sierra Leone",
+        "phone": "+232 22 222888",
+        "website": "https://leoneoil.sl",
+        "logo": "images/default.jpg",
+        "membershipLevel": "Silver"
+    }
+]

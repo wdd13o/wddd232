@@ -1,0 +1,501 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.navbar .burger-menu {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar .burger-menu {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 999;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-toggle button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.grid section:hover {
+    transform: scale(1.05);
+}
+
+.grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* List View */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.list section img {
+    display: none; /* Hide images in list view */
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: Make icons circular */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow to icons */
+}
+
+/* Footer */
+.footer-content {
+    background: rgb(252, 252, 252) no-repeat center center;
+    background-size: cover;
+    color: rgb(79, 8, 247);
+    text-align: center;
+    padding: 2rem;
+    border-top: 5px solid #007BFF; /* Optional: Add a top border for separation */
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+.footer-content .social-media {
+    margin: 1rem 0;
+}
+
+.footer-content .social-media a {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+}
+
+.footer-content .social-media img {
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+
+    .footer-content .social-media a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(65, 3, 233);
+    text-align: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 15s infinite; /* Animation for background */
+}
+
+/* Keyframes for background animation */
+@keyframes backgroundAnimation {
+    0% {
+        background-image: url('https://th.bing.com/th/id/OIP.zhKj3FOs8S_qGSCGhib86wHaEJ?rs=1&pid=ImgDetMain');
+    }
+    33% {
+        background-image: url('https://artlogic-res.cloudinary.com/w_600,c_limit,f_auto,fl_lossy,q_auto/ws-kavigupta/usr/images/exhibitions/main_image_override/89/manishnaihistoryofgestures-1-1062x720.jpg');
+    }
+    66% {
+        background-image: url('https://th.bing.com/th/id/R.7e112be061cd5f520157b87bcb081fd8?rik=t8eODpnt43%2fG8g&riu=http%3a%2f%2fwww.galleriesnow.net%2fwp-content%2fuploads%2f2014%2f11%2fDavid-Zwirner-20th-St-Jan-Schoonhoven-1.jpg&ehk=zJun%2fhNJfSY%2fBjjey3HqxMda%2fvzRV2p%2ffHjd9kD1bXI%3d&risl=&pid=ImgRaw&r=0');
+    }
+    100% {
+        background-image: url('https://www.pacegallery.com/media/images/MARTIN_inst_20210504_v06.width-720.jpg');
+    }
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* Responsive styles for hero section */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+
+/* Spotlight Section */
+#spotlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: calc(33.333% - 1rem);
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+    margin-bottom: 0.5rem;
+}
+
+.spotlight-card a {
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+/* Events and Weather Section */
+.events-weather-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px; /* Adds space between the columns */
+    margin: 20px 0;
+}
+
+.current-events, .weather-section {
+    flex: 1; /* Ensures both sections take equal space */
+    min-width: 300px; /* Ensures sections don't shrink too much on smaller screens */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.current-events h3, .weather-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .events-weather-container {
+        flex-direction: column; /* Stacks sections vertically on smaller screens */
+    }
+}
+
+/* Weather Section Styling */
+.weather-section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100px; /* Limit the size of the weather icons */
+    height: auto;
+}
+
+.weather-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weather-section ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.weather-section ul li img {
+    width: 50px; /* Size for forecast icons */
+    height: 50px;
+}
+
+/* Current Events Section Styling */
+.current-events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.current-events li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.current-events h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.current-events p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF; /* Primary color */
+    border: none;
+    border-radius: 25px; /* Rounded border */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.cta-button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Responsive display for smaller screens */
+@media (max-width: 768px) {
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+/* Centering images in current-events and weather-section */
+.current-events img,
+.weather-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; /* Adjust the size of the images */
+    height: auto;
+}
+
+.current-events {
+    text-align: center; /* Center-align the content in the current-events section */
+}
+
+.weather-section {
+    text-align: center; /* Center-align the content in the weather-section */
+}
